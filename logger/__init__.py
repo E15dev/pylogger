@@ -1,7 +1,5 @@
-import math
 import time
-# from colors import *
-import os
+
 
 black = '§0'
 dark_blue = '§1'
@@ -25,6 +23,7 @@ cwarning = dark_magenta
 cerror = dark_red
 cfatal = red
 
+
 class logger:
     def __init__(self, logdir, realprint):
         global rp, lastlog, thislog
@@ -47,6 +46,8 @@ class logger:
             print(t, end='')
         lastlog.write(t)
         thislog.write(t)
+        lastlog.flush()
+        thislog.flush()
         return 0
 
     def info(self, text):
