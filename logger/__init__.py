@@ -66,6 +66,14 @@ class logger:
         self.log(cfatal, str(text))
         return 0
 
+    def end(self, exitcode):
+        if exitcode == 0:
+            self.info(f'game end with exit code {str(exitcode)}')
+        else:
+            self.fatal(f'game end with invalid exit code {str(exitcode)}')
+        exit(exitcode)
+        return 0
+
 
 test = """
 if __name__ == '__main__':
