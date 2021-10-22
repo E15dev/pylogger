@@ -1,0 +1,21 @@
+black = '§0'
+dark_blue = '§1'
+dark_green = '§2'
+dark_aqua = '§3'
+dark_red = '§4'
+dark_magenta = '§5'
+gold = '§6'
+silver = '§7'
+gray = '§8'
+blue = '§9'
+green = '§a'
+aqua = '§b'
+red = '§c'
+pink = '§d'
+gold = '§e'
+white = '§f'
+
+cinfo = silver
+cwarning = dark_magenta
+cerror = dark_red
+cfatal = red
