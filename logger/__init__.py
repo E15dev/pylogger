@@ -42,7 +42,7 @@ class logger:
         thislog.close()
         thislog = open(tln, 'a', encoding="utf-8")
         rp = realprint
-        self.info("logging with logger version : {0]".format(version))
+        self.info("logging with logger version : {0}".format(version))
 
     def log(self, c, text, level):
         global rp, lastlog, thislog
